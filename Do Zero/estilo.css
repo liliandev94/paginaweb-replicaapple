@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "San Francisco";
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 48px;
+}
+
+main {
+  margin-bottom: 48px;
+  /* max-width: 1000px;
+  margin: 0 auto; */
+}
+
+nav {
+  font-size: 13px;
+}
+
+li {
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  /* max-width: 1000px;
+  margin: 0 auto; */
+  align-items: center;
+
+}
+
+ul{
+  list-style: none;
+  /* display: flex;
+  gap: 16px; */
+
+}
+
+svg {
+  display: block;
+
+}
+
+#produto {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+#precos {
+  font-size: 17.6px;
+}
+
+#a-vista, #parcelas, .pequeno {
+  font-size: 12.8px;
+}
+
+.cinza{
+  color: #6e6e73;
+}
+
+a{
+  color: #0066CC;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+#opcoes-produto{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#selo-carbono{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  & img{
+  width: 25px;
+}
+}
+
+/* Nesting ou alinhamneto */
+/* #selo-carbono img{
+  width: 25px;
+} */
+
+input[type="radio"] {
+  display: none;
+}
+
+
+
+.cores{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#selecao-cores{
+  display: flex;
+  gap: 10px;
+}
+
+input[type="radio"]:checked + label{
+  border-radius: 50%;
+}
+
+#opcoes-tamanho input[type="radio"]:checked + label,
+input[type="radio"]:checked + label {
+  border: solid 2px #0066CC;
+  
+}
+
+#selecionar-imagem input[type="radio"]:checked + label{
+  border-radius: 0;
+  border: none;
+  border-bottom: solid 2px #6e6e7399;
+}
+
+#selecao-cores label{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  #selecao-cores label img{
+  width: 32px;
+  cursor: pointer;
+  mix-blend-mode: color;
+}
+
+#opcoes{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* #tamanho-caixa{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} */
+
+#opcoes-tamanho{
+  display: flex;
+  gap: 10px;
+}
+
+#opcoes-tamanho label{
+  border: solid 1px black;
+  padding: 30px 50px;
+  border-radius: 16px;
+  font-size: 17.6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* input[type="radio"]:checked + label {
+  border: solid 2px #0066CC;
+  border-radius: 50%;
+} */
+
+#info-extra, .comprar-depois, #tamanha-caixa{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.entrega{
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.informacoes-entrega{
+  display: flex;
+  flex-direction:  column;
+  gap: 3px;
+}
+
+button{
+  background-color: #0071e3;
+  color: white;
+  font-size: 17.6px;
+  border: none;
+  padding: 8px 35px;
+  align-items: start;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #057bf1;
+}
+
+.salvar-depois{
+  display: flex;
+  gap: 3px;
+}
+
+#selecionar-imagem label img{
+  width: 46px;
+  cursor: pointer;
+}
+
+#selecionar-imagem{
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  }
+
+.caixa-pequena{
+  transform: scale(0.9);
+}
